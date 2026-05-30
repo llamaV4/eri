@@ -10,3 +10,8 @@ playpause.addEventListener('click', function() {
         playpause.textContent = 'Play';
     }
 } );
+
+const volumeSlider = document.getElementById('volume');
+volumeSlider.addEventListener('input', function() {
+    audio.volume = parseFloat(volumeSlider.value);
+}); 
