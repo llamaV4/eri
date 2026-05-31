@@ -1,5 +1,15 @@
+const songs = ['song0.mp3', 'song1.mp3', 'song2.mp3', 'song3.mp3' , 'song4.mp3' , 'song5.mpg'];
+let currentIndex= 0;
+
 const audio= document.getElementById('audio');
 const playpause= document.getElementById('play-pause');
+const songTitle = document.getElementById('song-title');
+
+function LoadSong(){
+    audio.scr = songs[currentIndex]
+    songTitle.textContent = songs[currentIndex]
+    
+}
 
 playpause.addEventListener('click', function() {
     if (audio.paused) {
