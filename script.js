@@ -5,11 +5,12 @@ const audio= document.getElementById('audio');
 const playpause= document.getElementById('play-pause');
 const songTitle = document.getElementById('song-title');
 
-function LoadSong(){
-    audio.scr = songs[currentIndex]
+function loadSong(){
+    audio.src = songs[currentIndex]
     songTitle.textContent = songs[currentIndex]
     
 }
+loadSong();
 
 playpause.addEventListener('click', function() {
     if (audio.paused) {
