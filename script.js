@@ -49,3 +49,7 @@ const songSlider = document.getElementById("progress");
 audio.addEventListener("timeupdate" , function() {
     songSlider.value = audio.currentTime;
 });
+
+songSlider.addEventListener("input" , function () {
+    audio.currentTime = songSlider.value;
+});
