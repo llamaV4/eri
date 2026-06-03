@@ -33,3 +33,7 @@ button {
 input[type="range"] {
     accent-color: white;
 }
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: black;
+}
