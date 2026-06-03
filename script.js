@@ -26,3 +26,9 @@ const volumeSlider = document.getElementById('volume');
 volumeSlider.addEventListener('input', function() {
     audio.volume = parseFloat(volumeSlider.value);
 }); 
+
+const nextButton = document.getElementById("next");
+nextButton.addEventListener("click", function () {
+    currentIndex++
+    loadSong()
+});
