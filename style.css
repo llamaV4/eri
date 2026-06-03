@@ -33,8 +33,3 @@ button {
 input[type="range"] {
     accent-color: white;
 }
-
-
-input[type="range"]::-moz-range-track {
-    background-color: black;
-}
