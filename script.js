@@ -44,3 +44,8 @@ previous.addEventListener("click", function () {
     currentIndex--
     loadSong()
 });
+
+const songSlider = document.getElementById("progress");
+audio.addEventListener("timeupdate" , function() {
+    songSlider.value = audio.currentTime;
+});
