@@ -32,3 +32,9 @@ nextButton.addEventListener("click", function () {
     currentIndex++
     loadSong()
 });
+
+function loadSong(){
+    audio.src = songs[currentIndex];
+    songTitle.textContent = songs[currentIndex];
+    audio.play();
+}
