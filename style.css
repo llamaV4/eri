@@ -34,9 +34,6 @@ input[type="range"] {
     accent-color: white;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
-    background-color: black;
-}
 
 input[type="range"]::-moz-range-track {
     background-color: black;
