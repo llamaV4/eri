@@ -37,5 +37,11 @@ function loadSong(){
     audio.src = songs[currentIndex];
     songTitle.textContent = songs[currentIndex];
     audio.play();
-    playpause.textContent = "play";
+    playpause.textContent = "Play";
 }
+
+const previous = document.getElementById("previous");
+previous.addEventListener("click", function () {
+    currentIndex--
+    loadSong()
+});
