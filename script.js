@@ -46,6 +46,9 @@ previous.addEventListener("click", function () {
 });
 
 const songSlider = document.getElementById("progress");
+audio.addEventListener('loadedmetadata', function() {
+    songSlider.max = audio.duration;
+});
 audio.addEventListener("timeupdate" , function() {
     songSlider.value = audio.currentTime;
 });
