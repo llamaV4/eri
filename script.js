@@ -37,4 +37,5 @@ function loadSong(){
     audio.src = songs[currentIndex];
     songTitle.textContent = songs[currentIndex];
     audio.play();
+    playpause.textContent = "play";
 }
